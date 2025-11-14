@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: #383838;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;  
+            top: 0;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> 
+                <th scope="col" style="width: 50px;">População</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus molestiae hic corrupti quam deserunt earum, suscipit laboriosam! Necessitatibus officia delectus quos odit debitis, omnis sit perspiciatis voluptatem doloremque est accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, amet dolorum. Officia commodi cupiditate error! Eos, accusamus ipsa! Inventore architecto rem iure unde quo asperiores dolores molestiae velit nisi aperiam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea nemo debitis quia possimus libero reprehenderit animi maxime vitae. Inventore harum repudiandae autem voluptatibus repellendus veritatis suscipit quos iste eligendi dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae ea, nihil modi repellat praesentium iste corrupti hic dolore recusandae fugiat voluptate distinctio voluptatum esse quibusdam quam non inventore? Corrupti, velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil excepturi numquam esse, libero maiores ea quae, earum, accusantium commodi reprehenderit unde! Aliquid sequi laudantium assumenda dicta accusamus veniam repudiandae!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eius eveniet quos aliquam aliquid consequatur dolor fugit, ut voluptas. Saepe nihil beatae illum voluptatibus sed nam architecto reiciendis libero commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea alias unde fugit pariatur eos delectus dolorem, quisquam aliquam perspiciatis incidunt sit illum perferendis esse eveniet quia possimus sunt quaerat consequuntur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid dolor saepe possimus earum unde ea quo rem vitae necessitatibus sit dicta, incidunt sed quis eius, voluptatibus aspernatur ducimus omnis nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolores, reprehenderit, libero, in illo perferendis laudantium corporis minima nihil atque dolorem cum explicabo quas earum suscipit accusantium sed odio magnam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis iure numquam reprehenderit labore dolor nesciunt, eveniet molestias quia quas. Vitae autem deserunt unde expedita nam ipsum dolore in, corporis repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, similique provident? Totam dignissimos, quis atque reiciendis nobis soluta nemo temporibus, inventore, facilis illum modi eligendi perferendis quo incidunt nostrum amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex porro voluptates unde commodi, repellat quae harum rerum nam doloremque nihil sit mollitia, quam dolorum at. Architecto provident dolor rem debitis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, libero quo praesentium laborum doloremque odio ipsam repudiandae. Nisi, tempora adipisci earum corporis atque, eveniet modi, suscipit voluptas soluta iste maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a soluta culpa id consectetur, itaque ut consequatur obcaecati optio similique autem excepturi blanditiis libero explicabo quae pariatur error? Ea, eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolores recusandae aperiam vero asperiores minima repellendus eveniet voluptates tempora, suscipit quibusdam? Ducimus perferendis magnam asperiores, alias inventore tempore ipsam eos? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur provident laboriosam sint voluptatem quos! Est non, placeat consequuntur obcaecati a aperiam accusantium, asperiores nulla neque explicabo unde, laboriosam error consequatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum aliquid dolorem minima quia provident nesciunt repellendus, doloremque eligendi eius deserunt similique, optio id possimus magnam delectus praesentium distinctio quasi necessitatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum vero ducimus explicabo ab dolore quibusdam ullam soluta error ad molestias minima, corrupti sint, ut possimus doloribus molestiae vel quaerat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus in, assumenda odio laudantium tempore hic quasi rem deleniti, qui, natus cupiditate tenetur pariatur eligendi. Explicabo suscipit at in exercitationem omnis.</p>
+</body>
+</html>
